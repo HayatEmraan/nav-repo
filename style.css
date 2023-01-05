@@ -1,17 +1,26 @@
-nav ul {
+nav > ul {
     display: flex;
     float: right;
 }
-nav ul li{
+nav li{
     margin-right: 20px;
     padding: 0 5px;
     list-style: none;
 }
-nav ul li a{
+nav li a{
     text-decoration: none;
     font-size: 20px;
 }
-nav ul li:hover{
+nav li:hover{
     background-color: lightgray;
     text-decoration: underline;
+}
+nav li .dropdown {
+    display: none;
+    position: absolute;
+    background-color: gray;
+    padding: 10px;
+}
+nav li:hover > .dropdown{
+    display: block;
 }
